@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="prospectus__container">
+    <div class="card" style="width: 18rem;">
+
+        <img src="Image/itLogo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Bachelor of Science in Information Technology</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="@Url.Action("Prospectus_IT", "Home", new { area = "" })" class="btn btn-primary">Prospectus</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="Image/cteLogo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Bachelor of Science in Education</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="@Url.Action("Prospectus_Educ", "Home", new { area = "" })" class="btn btn-primary">Prospectus</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; position: relative; z-index: 9">
+        <img src="Image/ceLogo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Bachelor of Science in Engineering</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="dropdown">
+                <button class="dropdown-button btn btn-primary">Prospectus</button>
+                <div class="dropdown-content">
+                    <!-- Dropdown links -->
+                    <a href="@Url.Action("Prospectus_MechEng", "Home", new { area = "" })" class="btn-primary">BSME</a>
+                    <a href="@Url.Action("Prospectus_ElectEng", "Home", new { area = "" })" class="btn-primary">BSEE</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="Image/cbmLogo.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Bachelor of Science in Business Management</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="@Url.Action("Prospectus_IT", "Home", new { area = "" })" class="btn btn-primary">Prospectus</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://mis.benedictocollege.edu.ph/assets/bene-school-815be6299a10bcc76c09c819b5a1f49beb216565f77ba611270de3b63f1b33f6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Bachelor of Science in Information Technology</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="@Url.Action("Prospectus_IT", "Home", new { area = "" })" class="btn btn-primary">Prospectus</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://mis.benedictocollege.edu.ph/assets/bene-school-815be6299a10bcc76c09c819b5a1f49beb216565f77ba611270de3b63f1b33f6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Bachelor of Science in Education</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="@Url.Action("Prospectus_Educ", "Home", new { area = "" })" class="btn btn-primary">Prospectus</a>
+        </div>
+    </div>
+
+</div>
+
