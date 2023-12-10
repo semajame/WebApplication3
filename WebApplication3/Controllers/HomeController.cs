@@ -53,6 +53,11 @@ namespace WebApplication3.Controllers
             return View("Prospectus/Prospectus_MechEng");
         }
 
-        
+        public ActionResult FirstSemFirstYearIT() // Accept the data parameter
+        {
+         
+            // Return the view
+            return View("Schedules/BSIT/FirstSemFirstYear");
+        }
     }
 }

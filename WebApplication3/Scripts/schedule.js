@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const cells = document.querySelectorAll(".cell");
   const modal = document.getElementById("inputModal");
-  const closeBtn = document.querySelector(".close");
+
   let currentCell;
 
   cells.forEach((cell) => {
@@ -10,22 +10,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  closeBtn.addEventListener("click", closeModal);
-
   function openModal(cell) {
     modal.style.display = "block";
     currentCell = cell;
   }
 
-  function closeModal() {
-    modal.style.display = "none";
+  document
+    .getElementById("saveChangesBtn")
+    .addEventListener("click", saveEvent);
+
+  function saveEvent() {
+    let eventInput = document.getElementById("eventInput").value;
+    currentCell.innerHTML = `<div>${eventInput}
+            <button type="button" class="btn btn-secondary">
+                Remove
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#inputModal">
+                Edit
+            </button>
+        </div>`;
+
+    document.getElementById("eventInput").value = "";
   }
-
-  window.saveEvent = function () {
-    const eventInput = document.getElementById("eventInput").value;
-    currentCell.innerHTML = eventInput;
-    closeModal();
-
-      eventInput = "";
-  };
 });

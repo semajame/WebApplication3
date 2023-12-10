@@ -1,14 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\App_Start",
     "\\Content",
     "\\Controllers",
     "\\Image",
-    "\\Scripts",
     "\\Views",
     "\\Views\\Home",
+    "\\Views\\Home\\Schedules",
+    "\\Views\\Home\\Schedules\\BSIT",
     "\\Views\\Shared"
   ],
-  "SelectedNode": "\\Scripts\\schedule.js",
+  "SelectedNode": "\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }

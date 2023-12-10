@@ -20,7 +20,7 @@ body {
 }*/
 
 header {
-  background-color: #121732;
+  background-color: #03153e;
 }
 
 header img {
@@ -95,7 +95,7 @@ h2 {
 .prospectus__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr) repeat(2, 0);
+  grid-template-rows: repeat(2, 1fr) repeat(2, 0);
   grid-column-gap: 16px;
   grid-row-gap: 16px;
 }
